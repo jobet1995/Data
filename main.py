@@ -18,12 +18,11 @@ pie_graph = {
 }
 
 data_line = {
-  'Month' : [
-    'Jan', 'Feb', 'Mar', 'April', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'
-  ],
-  'Sales' :[
-    400, 700, 100, 300, 500, 600, 450, 890, 900, 1000, 940, 189
-  ]
+    'Month': [
+        'Jan', 'Feb', 'Mar', 'April', 'May', 'Jun', 'Jul', 'Aug', 'Sept',
+        'Oct', 'Nov', 'Dec'
+    ],
+    'Sales': [400, 700, 100, 300, 500, 600, 450, 890, 900, 1000, 940, 189]
 }
 df1 = pd.DataFrame(data)
 #df = pd.DataFrame(data2)
@@ -52,7 +51,7 @@ ax2.pie(dfpie['Market Shares'],
 ax2.axis('equal')
 ax2.set_title('Market Shares')
 
-ax3.plot(dfline['Month'], dfline['Sales'], marker='o',color='green')
+ax3.plot(dfline['Month'], dfline['Sales'], marker='o', color='green')
 ax3.set_xlabel('Month')
 ax3.set_ylabel('Sales')
 ax3.set_title('Monthly Market Sales')
